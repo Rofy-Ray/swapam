@@ -56,6 +56,7 @@ html, body {
 @media (max-width: 576px) {
     .form-content .form-items {
         min-width: 100%;
+        padding: 10px;
     }
 }
 
