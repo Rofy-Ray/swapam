@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+*, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    height: 100%;
+    background: linear-gradient(135deg, #3d1315 0%, #944e51 100%);
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #F76167;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.form-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 136px);
+}
+
+.form-holder .form-content {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.form-content .form-items {
+    border: 3px solid #fff;
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    min-width: 540px;
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.4s ease;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 576px) {
+    .form-content .form-items {
+        min-width: 100%;
+    }
+}
+
+.form-content h3 {
+    color: #fff;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-content p {
+    color: #fff;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: #fff;
+}
+
+.form-check-input, .form-check-input:focus {
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+  background-color: #f76167;
+  border-color: #f76167;
+  box-shadow: none;
+}
+
+.form-content input[type=text], 
+.form-content input[type=tel], 
+.form-content input[type=email], 
+.form-content select {
+    width: 100%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    color: #000;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+.btn-outline-dark {
+    color: #F76167;
+    border-color: #FFF;
+}
+
+.btn-outline-dark:hover {
+    color: #fff;
+    background-color: #F76167;
+    border-color: #F76167;
+}
+
+.btn-check:checked + .btn-outline-dark {
+    color: #fff;
+    background-color: #F76167;
+    border-color: #F76167;
+}
+
+.btn-check:focus + .btn-outline-dark,
+.btn-outline-dark:focus {
+    box-shadow: 0 0 0 0.25rem rgba(247, 97, 103, 0.25);
+}
+
+.btn-dark {
+    background-color: #F76167;
+    outline: none;
+    border: 0px;
+    box-shadow: none;
+}
+
+.btn-dark:hover, 
+.btn-dark:focus, 
+.btn-dark:active {
+    background-color: #f68488;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none;
+}
+
+.invalid-feedback {
+    color: #ff606e;
+}
+
+.valid-feedback {
+    color: #2acc80;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    color: #fff;
+}

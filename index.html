@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwapAm - Smartphone Swap Deals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./swapam.JPG" alt="Logo" class="d-inline-block align-text-top">
+            </a>
+        </div>
+    </nav>
+    <div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Swap Your Smartphone Today</h3>
+                        <!-- <p>Fill in your swap request below.</p> -->
+                        <p>Submit request. Get options. Swap phone.</p>
+                        <form class="requires-validation" action="https://form.taxi/s/s9q762xy" method="POST" novalidate>
+                            <div class="col-md-12">
+                               <input class="form-control" type="text" name="firstName" placeholder="First Name" required>
+                               <div class="valid-feedback">First name is valid!</div>
+                               <div class="invalid-feedback">First name cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                               <input class="form-control" type="text" name="lastName" placeholder="Last Name" required>
+                               <div class="valid-feedback">Last name is valid!</div>
+                               <div class="invalid-feedback">Last name cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="email" name="email" placeholder="Email Address" required>
+                                <div class="valid-feedback">Email is valid!</div>
+                                <div class="invalid-feedback">Email cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="tel" name="phone" placeholder="Phone Number" required>
+                                <div class="valid-feedback">Phone number is valid!</div>
+                                <div class="invalid-feedback">Phone number cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="tel" name="whatsapp" placeholder="WhatsApp Number" required>
+                                <div class="valid-feedback">WhatsApp number is valid!</div>
+                                <div class="invalid-feedback">WhatsApp number cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="location" placeholder="Location/City (e.g., Ikeja, Lagos)" required>
+                                <div class="valid-feedback">Location is valid!</div>
+                                <div class="invalid-feedback">Location cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="currentPhone" placeholder="Current Phone (e.g., iPhone 15, Samsung S23)" required>
+                                <div class="valid-feedback">Current phone model is valid!</div>
+                                <div class="invalid-feedback">Current phone model cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="phoneIssue" placeholder="Phone Issues (e.g., cracked screen, etc. Type N/A if none)" required>
+                                <div class="valid-feedback">Phone issue field is valid!</div>
+                                <div class="invalid-feedback">Phone issue field cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="text" name="desiredPhone" placeholder="Desired Phone (e.g., iPhone 16, Samsung S24)" required>
+                                <div class="valid-feedback">Desired phone model is valid!</div>
+                                <div class="invalid-feedback">Desired phone model cannot be blank!</div>
+                            </div>
+
+                            <div class="col-md-12 mt-3">
+                                <label class="mb-3 mr-1">Current Phone Condition: </label>
+
+                                <input type="radio" class="btn-check" name="condition" id="brandNew" value="brandNew" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-dark" for="brandNew">Brand New</label>
+
+                                <input type="radio" class="btn-check" name="condition" id="fairlyUsed" value="fairlyUsed" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-dark" for="fairlyUsed">Fairly Used</label>
+
+                                <input type="radio" class="btn-check" name="condition" id="old" value="old" autocomplete="off" required>
+                                <label class="btn btn-sm btn-outline-dark" for="old">Old</label>
+                                <div class="invalid-feedback mv-up">Please select phone condition!</div>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="invalidCheck" required>
+                                <label class="form-check-label">I confirm that all provided information is correct.</label>
+                                <div class="invalid-feedback">Please confirm that all provided information is correct.</div>
+                            </div>
+
+                            <div class="form-button mt-3">
+                                <button id="submit" type="submit" class="btn btn-dark" disabled>Submit Swap Request</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 SwapAm. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
